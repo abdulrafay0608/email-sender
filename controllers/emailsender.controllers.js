@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import generateEmailHtml from "../helpers/emailtemplategenerate.helper.js";
 
 export const EmialSenderController = async (req, res) => {
   const { name, email, subject, message } = req.body;

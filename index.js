@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { EmialSenderController } from "./controllers/emailsender.controller.js";
+import { EmialSenderController } from "./controllers/emailsender.controllers.js";
 
 dotenv.config();
 
