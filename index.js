@@ -11,6 +11,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (_, res) => {
+  res.send("Welcome to the Abdul Rafay Portfolio Backend!");
+});
 app.post("/api/v1/send-email", EmialSenderController);
 
 const PORT = process.env.PORT || 5000;
